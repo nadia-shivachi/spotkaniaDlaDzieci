@@ -1,15 +1,17 @@
 .navigation {
   position: sticky;
   top: 0;
-  height: 60px;
+  width: 100%;
   text-align: right;
   background-color: #fff;
+  border-bottom: 1px solid #d8d8d8;
   z-index: 10;
 
   &__container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
+    height: 60px;
+    max-width: 1400px;
   }
   &__button {
     display: block;
@@ -45,6 +47,12 @@
   }
 }
 
+@media (min-width: 768px) {
+.navigation__container {
+    padding: 0 1em;
+}
+}
+
 @media (min-width: 992px) {
   .navigation__button {
     display: none;
@@ -55,7 +63,13 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding: 1em;
+    width: auto;
+    background: none;
+    overflow: hidden;
     font-size: 1.6rem;
+    font-weight: 700;
+    // transform: translateX(0);
+    // opacity: 1;
   }
 }
 
