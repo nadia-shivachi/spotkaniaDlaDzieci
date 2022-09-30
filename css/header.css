@@ -8,7 +8,7 @@
   letter-spacing: 5px;
   background-image: url("/./images/day_care_img_06.png");
   background-size: cover;
-  background-position: center;
+  background-position: right 15% bottom 1%;
   background-color: #f5f5ea;
   z-index: 0;
 }
@@ -17,9 +17,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3.2rem;
+  font-size: 4.8rem;
   color: #e02b20;
-  text-shadow: 3px 3px 5px rgb(117, 116, 116);
+  text-shadow: 3px 3px 5px rgb(43, 41, 41);
+  opacity: 0;
+  -webkit-animation: move 3s 1s forwards;
+          animation: move 3s 1s forwards;
 }
 .header__title {
   position: absolute;
@@ -29,40 +32,115 @@
 }
 .header__title--animation {
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 4.6rem;
   text-shadow: 3px 3px 5px rgb(117, 116, 116);
+  -webkit-animation: rotate-header 1.2s 0.2s linear forwards;
+          animation: rotate-header 1.2s 0.2s linear forwards;
+  opacity: 0;
 }
-.header__title--animation_S, .header__title--animation_I {
+.header__title--animation:nth-child(1) {
   color: #ee2938;
 }
-.header__title--animation_P {
+.header__title--animation:nth-child(2) {
   color: #11ace3;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
-.header__title--animation_O {
+.header__title--animation:nth-child(3) {
   color: #84c556;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
-.header__title--animation_T {
+.header__title--animation:nth-child(4) {
   color: #7b4b9e;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
-.header__title--animation_K {
+.header__title--animation:nth-child(5) {
   color: #ecea50;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
-.header__title--animation_A {
+.header__title--animation:nth-child(6) {
   color: #f79430;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
-.header__title--animation_N {
+.header__title--animation:nth-child(7) {
   color: #2fb87d;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
-.header__title--animation_A {
+.header__title--animation:nth-child(8) {
+  color: #ee2938;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.header__title--animation:nth-child(9) {
   color: #faad4b;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
+@-webkit-keyframes move {
+  0% {
+    opacity: 0;
+    bottom: -100%;
+  }
+  50% {
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    bottom: -100%;
+  }
+  50% {
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rotate-header {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+    filter: blur(8px);
+  }
+  to {
+    transform: rotateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+@keyframes rotate-header {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+    filter: blur(8px);
+  }
+  to {
+    transform: rotateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 @media (min-width: 576px) {
   .header__text {
-    font-size: 4.2rem;
+    font-size: 4.8rem;
   }
   .header__title--animation {
-    font-size: 5rem;
+    font-size: 5.2rem;
   }
 }
 @media (min-width: 768px) {
