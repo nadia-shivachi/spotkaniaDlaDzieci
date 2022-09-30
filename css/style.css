@@ -71,6 +71,16 @@ table {
   .navigation__container {
     padding: 0 1em;
   }
+  .section {
+    padding: 5em 0;
+  }
+  .section__title {
+    font-size: 3.6rem;
+    letter-spacing: 5px;
+  }
+  .section__text {
+    font-size: 1.8rem;
+  }
 }
 @media (min-width: 992px) {
   .header__text {
@@ -93,6 +103,9 @@ table {
     font-size: 1.6rem;
     font-weight: 700;
   }
+  .section__title {
+    font-size: 3.8rem;
+  }
 }
 @media (min-width: 1200px) {
   .header__title {
@@ -103,5 +116,12 @@ table {
   }
   .navigation__list {
     font-size: 1.8rem;
+  }
+  .section__title {
+    font-size: 4.2rem;
+    letter-spacing: 10px;
+  }
+  .section__text {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

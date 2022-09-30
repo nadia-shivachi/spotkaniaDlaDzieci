@@ -1,0 +1,20 @@
+.section {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+.section__title {
+  margin-bottom: 0.8em;
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #30b87e;
+  border-bottom: 5px solid #30b87e;
+}
+.section__text {
+  font-size: 1.6rem;
+}
+.section__paragraf {
+  margin: 1em;
+}/*# sourceMappingURL=section.css.map */
