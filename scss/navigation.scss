@@ -46,35 +46,3 @@
     }
   }
 }
-
-@media (min-width: 768px) {
-.navigation__container {
-    padding: 0 1em;
-}
-}
-
-@media (min-width: 992px) {
-  .navigation__button {
-    display: none;
-  }
-
-  .navigation__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 1em;
-    width: auto;
-    background: none;
-    overflow: hidden;
-    font-size: 1.6rem;
-    font-weight: 700;
-    // transform: translateX(0);
-    // opacity: 1;
-  }
-}
-
-@media (min-width: 1200px) {
-  .navigation__list {
-    font-size: 1.8rem;
-  }
-}
